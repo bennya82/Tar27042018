@@ -17,11 +17,11 @@
         style="@style/MyEditText"
         android:layout_height="wrap_content" />
     
-    <android.support.v7.app.AlertController.RecycleListView
+    <android.support.v7.widget.RecyclerView
         android:layout_margin="10pt"
         app:layout_constraintTop_toBottomOf="@id/act_contacts_et_search"
         android:id="@+id/act_contacts_recycleViewList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></android.support.v7.app.AlertController.RecycleListView>
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
     
 </android.support.constraint.ConstraintLayout>
