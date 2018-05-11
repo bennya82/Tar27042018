@@ -2,27 +2,35 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="4pt"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:text="???"
-        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewContact"
+        android:text="------------"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:id="@+id/txt_firstName" />
 
     <TextView
-        android:text="???"
-        app:layout_constraintRight_toLeftOf="@id/imageViewContact"
-        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewContact"
+        android:text="------------"
+        app:layout_constraintTop_toBottomOf="@id/txt_firstName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:id="@+id/txt_lastName" />
 
     <ImageView
-        app:layout_constraintLeft_toRightOf="@id/txt_firstName"
+        android:layout_margin="4pt"
         android:scaleType="fitXY"
-        android:layout_width="60pt" android:id="@+id/imageViewContact"
-        android:layout_height="60pt" android:src="@drawable/contact_default" />
+        android:layout_width="30pt" android:id="@+id/imageViewContact"
+        android:layout_height="30pt" android:src="@drawable/contact_default" />
 
     <ImageView
-        app:layout_constraintRight_toLeftOf="@+id/txt_firstName"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_width="wrap_content" android:id="@+id/imageViewStar"
         android:layout_height="wrap_content" android:src="@android:drawable/star_on" />
 

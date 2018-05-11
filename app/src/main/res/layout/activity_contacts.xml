@@ -20,6 +20,8 @@
     
     <android.support.v7.widget.RecyclerView
         android:layout_margin="10pt"
+        android:paddingBottom="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/act_contacts_et_search"
         android:id="@+id/act_contacts_recycleViewList"
         android:layout_width="match_parent"

@@ -2,6 +2,7 @@ package com.bennyab.tar27042018;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.EditText;
@@ -40,6 +41,8 @@ public class ContactsActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         adapter = new ContactsAdapter(contactsData);
         recyclerView.setAdapter(adapter);
+        DividerItemDecoration itemDecor = new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL);
+        recyclerView.addItemDecoration(itemDecor);
 
 
     }
